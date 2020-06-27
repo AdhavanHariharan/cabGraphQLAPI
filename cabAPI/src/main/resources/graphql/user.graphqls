@@ -1,0 +1,9 @@
+type User{
+	name: String!
+}
+
+type Query {
+    findBookings(name:String!): [Bookings]!
+    
+}
+

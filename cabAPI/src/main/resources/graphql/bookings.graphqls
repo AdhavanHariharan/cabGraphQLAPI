@@ -1,0 +1,18 @@
+type Bookings{
+	id: ID!
+	carType: String!
+	source: String!
+	destination: String!
+	user:User
+	cab:Cab
+}
+
+extend type Query {
+    findAllBookings: [Bookings]!
+}
+
+type Mutation {
+    newBooking(carType: String!, source: String!, destination: String!,user: String!) : Bookings!
+    
+}
+

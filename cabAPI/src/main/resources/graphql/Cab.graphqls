@@ -1,0 +1,12 @@
+type Cab{
+	cabId: ID!
+	carType: String!
+	distance: Long!
+	status: String!
+	area:String!
+	
+}
+
+extend type Query {
+    findCab(area:String!,carType:String!): Cab
+}
